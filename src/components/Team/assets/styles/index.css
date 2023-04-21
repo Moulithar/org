@@ -1,0 +1,40 @@
+.team h1{
+    padding:20px;
+}
+.tm1{
+    height:200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+  .tm1:hover  {
+    opacity:80%;
+    cursor:pointer;
+  }
+
+  @media screen and (max-width:767px){
+    .tm1{
+      height:100px;
+      width: 100px;
+      object-fit: cover;
+  }
+  }
+
+
+/***********
+<div className="team">
+            <h1>OUR TEAM</h1>
+           <container>
+           <Row className="text-center p-5">
+           <Col xs={4}>
+           <img className ="tm" src={images1} />
+           </Col>
+           <Col xs={4}>
+            <img className ="tm" src={images2} alt="" />
+           </Col>
+           <Col xs={4}>
+            <img className ="tm" src={images3} alt="" />
+           </Col>
+           </Row>
+           </container>
+        </div>*****/

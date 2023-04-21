@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+.imagesmall{
+    width: 100%;
+    height:35%;
+    object-fit: cover;
+}
+.imagemain{
+    width:100%;
+    height:94%;
+    position:relative;
+}
+.about span {
+  position: relative;
+}
+.about span h3{
+    color: yellow !important; 
+    font-size:80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top:-300px;
+    left:900px;
+
+
+}
+.about span p{
+    color: green !important;
+    font-size: 80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top: -390px;
+    left:900px;
+    
+    
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+@media screen and (max-width: 992px)
+{
+  .about{
+    display:none;
+  }
+  span p {
+    color: green;
+    font-size: 80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top: 880px;
+    left: 505px;
+    display: none;
+  }
+  span h3 {
+    color: yellow;
+    font-size: 80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top: 960px;
+    left: 505px;
+    display: none;
+  }
+  
+};
+@media screen and (max-width: 767px)
+{
+  span p {
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top: 1880px;
+    left: 55px;
+    display: none;
+  }
+  span h3 {
+    color: yellow;
+    font-size: 80px;
+    font-family: 'Delicious Handrawn', cursive;
+    position: absolute;
+    top: 1960px;
+    left: 55px;
+    display: none;
+  }
+  
+}; 
